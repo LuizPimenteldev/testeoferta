@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Lowtrack Pixels (o script só carrega 1x; os IDs vão em LowTrackIds) -->
+    <link rel="preconnect" href="https://lowtrack.com.br">
+    <script>
+      window.pixelId = "lt_px_41bad49b791c";
+      window.LowTrackIds = ["lt_px_41bad49b791c", "lt_px_e5d3bd5a0c12"];
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("src", "https://lowtrack.com.br/pixel.js");
+      document.head.appendChild(a);
+    </script><script async="" src="js/pixel.js"></script>
+
+    <!-- Meta Pixel 1632402174535675 — carregado somente fora de regiões que exigem consentimento (rota sem banner) -->
+    <script>
+      (function () {
+        var CONSENT_REGIONS = ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"];
+        var allowed = function (loc) {
+          return !!loc && loc !== "XX" && loc !== "T1" && CONSENT_REGIONS.indexOf(loc) === -1;
+        };
+        var load = function () {
+          if (window.__fbPixelLoaded) return;
+          window.__fbPixelLoaded = true;
+          if (!window.fbq) {
+            var n = (window.fbq = function () {
+              n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+            });
+            if (!window._fbq) window._fbq = n;
+            n.push = n; n.loaded = true; n.version = "2.0"; n.queue = [];
+            var s = document.createElement("script");
+            s.async = true;
+            s.src = "https://connect.facebook.net/en_US/fbevents.js";
+            document.head.appendChild(s);
+          }
+          window.fbq("init", "1632402174535675", {}, { agent: "lovable" });
+          window.fbq("track", "PageView");
+        };
+        try {
+          var ctrl = new AbortController();
+          var timer = setTimeout(function () { ctrl.abort(); }, 2000);
+          fetch("/cdn-cgi/trace", { signal: ctrl.signal, cache: "no-store" })
+            .then(function (r) { if (!r.ok) throw new Error("trace"); return r.text(); })
+            .then(function (txt) {
+              clearTimeout(timer);
+              var m = /(?:^|\n)loc=([A-Za-z0-9]{1,3})(?:\n|$)/.exec(txt);
+              if (allowed(m ? m[1].toUpperCase() : "")) load();
+            })
+            .catch(function () { clearTimeout(timer); });
+        } catch (e) {}
+      })();
+    </script>
+
+
+    <title>Dora Shorts — Mais de 10.000 Minisséries e Doramas Liberados</title>
+    <meta name="description" content="Assista às minisséries e doramas dos apps mais famosos em um só lugar. Acesso imediato, pagamento único.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dora Shorts — Mais de 10.000 Minisséries e Doramas Liberados">
+    <meta property="og:description" content="Assista às minisséries e doramas dos apps mais famosos em um só lugar. Acesso imediato, pagamento único.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dora Shorts — Mais de 10.000 Minisséries e Doramas Liberados">
+    <meta name="twitter:description" content="Assista às minisséries e doramas dos apps mais famosos em um só lugar.">
+    <script type="module" src="js/index-POp8HPtl.js"></script>
+    <link rel="stylesheet" crossorigin="" href="css/index-Bz7iZ1yL.css">
+  <script defer="" src="js/~flock.js" data-proxy-url="/~api/analytics"></script><script defer="" src="js/events.270c78a44fc53e7b.js" data-artifact-kind="dwl_content_hash" data-artifact-id="81709db38d3a77a132fd61022d11ca192a138ce7859e4002400b44db54391270" data-commit-sha="9a5c587ae25e814cb53b4170541549c994362a18" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8wd2E5ZHFid24zOWdwYmgycHNxazEwbWp4aCIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiI4MTcwOWRiMzhkM2E3N2ExMzJmZDYxMDIyZDExY2ExOTJhMTM4Y2U3ODU5ZTQwMDI0MDBiNDRkYjU0MzkxMjcwIiwiY29tbWl0X3NoYSI6IjlhNWM1ODdhZTI1ZTgxNGNiNTNiNDE3MDU0MTU0OWM5OTQzNjJhMTgiLCJleHAiOjE3OTY3NzMxNjl9.AUbe5uIKgZT6TtPZWVA4hM5fEO6O5zAkOMDsx90CZ6k" data-autocapture="1" data-consent="1"></script><meta property="og:image" content="images/id-preview-c188ef85--f94df5fa-174c-41d1-9216-585621fd2613.lovable.app-1773971350800.png"><meta name="twitter:image" content="images/id-preview-c188ef85--f94df5fa-174c-41d1-9216-585621fd2613.lovable.app-1773971350800.png"></head>
+
+  <body>
+    <div id="root"></div>
+  
+
+</body></html>
